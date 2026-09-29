@@ -1,0 +1,15 @@
+datasets<4.0.0
+transformers
+accelerate
+pytorch-crf
+seqeval==0.0.5
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+torch
+pydantic
+gradio
+sentencepiece
+PyYAML>=6.0
