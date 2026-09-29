@@ -6,10 +6,6 @@ Project được tái cấu trúc từ 3 notebook gốc: LSTM, Transformer và G
 
 ```text
 my_project/
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── external/
 ├── notebooks/
 ├── src/
 │   ├── data/
@@ -36,7 +32,7 @@ my_project/
 Dataset gốc
 ├── train
 │   ├── 80% -> TRAIN
-│   └── 20% -> EVAL (seed = 42)
+│   └── 20% -> EVAL 
 └── validation -> TEST
 ```
 
@@ -112,12 +108,6 @@ Có thể dùng `--stage extractor` hoặc `--stage sentiment` để train từn
 !python -m src.ui.app
 ```
 
-### Chạy API FastAPI
-
-```python
-!uvicorn src.api.main:app --host 0.0.0.0 --port 8000
-```
-
 ## Dữ liệu
 
 Dataset trong notebook gốc được tải từ Hugging Face (`jakartaresearch/semeval-absa`, config `restaurant`). Các thư mục `data/raw`, `data/processed`, `data/external` được chuẩn bị cho trường hợp cần lưu dataset cục bộ sau này.
@@ -133,9 +123,3 @@ Checkpoint được lưu trong `saved_models/`:
 - `saved_models/generative/`
 
 Các đường dẫn và tên model được cấu hình ở `configs/default.yaml`.
-
-## Lưu ý
-
-- Không thay đổi notebook gốc.
-- Logic model/hyperparameter được giữ từ source đã tách.
-- Các thay đổi bắt buộc để module hóa và chạy project được ghi trong `CHANGELOG.md`.
