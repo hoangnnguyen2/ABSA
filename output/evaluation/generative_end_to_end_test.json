@@ -1,1 +1,12 @@
-
+{
+  "precision": 0.7454068241469817,
+  "recall": 0.753315649867374,
+  "f1": 0.7493403693931399,
+  "exact_match": 0.70125,
+  "true_positives": 852,
+  "total_predicted_pairs": 1143,
+  "total_gold_pairs": 1131,
+  "num_samples": 800,
+  "model": "generative",
+  "test_split": "original validation"
+}

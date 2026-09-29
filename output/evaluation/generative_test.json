@@ -1,0 +1,14 @@
+{
+  "test_loss": 0.21087700128555298,
+  "test_precision": 0.7445319335083115,
+  "test_recall": 0.7537643932683791,
+  "test_f1": 0.7491197183098591,
+  "test_exact_match": 0.70125,
+  "test_true_positives": 851,
+  "test_total_predicted_pairs": 1143,
+  "test_total_gold_pairs": 1129,
+  "test_num_samples": 800,
+  "test_runtime": 56.7182,
+  "test_samples_per_second": 14.105,
+  "test_steps_per_second": 0.882
+}
